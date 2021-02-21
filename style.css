@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: black;
+  color: white;
+  transition: 0.5;
+}
+/* back theme */
+.theme {
+  /* border: 1px solid red; */
+  height: 70px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  /* background-color: cadetblue; */
+  gap: 20px;
+  padding: 0 20px;
+
+  /* justify-content: space-between; */
+}
+#black,
+#white {
+  justify-self: right;
+  cursor: pointer;
+  /* border: 1px solid black; */
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  outline: none;
+  border: 0;
+  transition: 0.5s;
+  box-shadow: 2px 2px 4px rgb(199, 199, 199), -2px -2px 4px rgb(192, 192, 192);
+}
+
+#black,
+#white {
+  transform: scale(1.1);
+}
+
+#black {
+  background-color: black;
+}
+
+#white {
+  background-color: rgb(255, 255, 255);
+}
+
+/* container */
+.container {
+  /* background-color: rgb(221, 221, 221); */
+  width: 25%;
+  /* text-align: center; */
+  margin: 10px auto;
+  height: 100%;
+  padding: 35px;
+  box-shadow: 2px 2px 4px rgb(199, 199, 199), -2px -2px 4px rgb(192, 192, 192);
+}
+.container h1 {
+  color: red;
+  font-size: 45px;
+  margin-bottom: 30px;
+  text-align: center;
+  transition: 0.5s;
+}
+form span {
+  font-size: 25px;
+  text-align: left;
+  display: block;
+  margin-bottom: 5px;
+}
+form .msg {
+  font-size: 20px;
+  color: red;
+  display: none;
+  animation: animate 2s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes span {
+  0% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+form input {
+  padding: 3px 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 0;
+  outline: none;
+  margin-bottom: 10px;
+  width: 300px;
+  border: 1px solid black;
+  /* box-shadow: 2px 2px 2px rgb(228, 228, 228), -2px -2px 3px rgb(224, 224, 224); */
+}
+form .btn {
+  width: 200px;
+  position: relative;
+  left: 70px;
+  cursor: pointer;
+  transition: 0.5s;
+  font-weight: 700;
+  margin-top: 20px;
+  color: red;
+  background-color: white;
+  padding: 10px 10px;
+  border-radius: 50px;
+  border: 0;
+  box-shadow: 2px 2px 5px rgb(255, 103, 103), -2px -2px 5px rgb(255, 88, 88);
+}
+form .btn:hover {
+  transform: scale(0.9);
+}

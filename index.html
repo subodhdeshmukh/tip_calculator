@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="theme">
+        <button id="black"></button>
+        <button id="white"></button>
+    </div>
+
+<div class="container">
+    <div class="main">
+        <h1>Tip Calculator</h1>
+        <!-- <form oninput="x.value = (parseInt(a.value)/100) *  parseInt(b.value); op.value = (parseInt(x.value)) + parseInt(a.value)"> -->
+        
+        <form>
+        
+
+            <span>Bill Amount:</span>
+            <input type="text" name="a" class="input" id="bill_amt" autocomplete="off">
+            <span id="bill_msg" class="msg"></span>
+            <br>
+
+            <span>Tip in percentage:</span>
+            <input type="text" name="b" id="tip_per" class="input" autocomplete="off">
+            <span id="tip_msg" class="msg"></span>
+            <br>
+
+            <span >Tip Amount:</span>
+            <input type="text" id="tip_amt" name="x" class="input">
+            <br>
+
+            <span>Total bill:</span>
+            <input type="text" name="op" id="tot_bill" class="input">
+            <br>
+
+            <input type="button" value="Calculate" class="btn" onclick="return btn()">
+        </form>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- 
+    bill amount     //validation (should not be empty)
+    tip is percentage //should not be empty 
+    tip amount
+    total bill amount
+ -->
+
+
+
+
